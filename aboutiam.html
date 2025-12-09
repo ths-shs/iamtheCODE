@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="style.css" rel="stylesheet">
+
+<link rel="stylesheet" href="assets/css/style-about.css" />
+<link rel="stylesheet" href="assets/css/index.css" />
+<link rel="stylesheet" href="assets/css/about.css" />
+    
+</head>
+
+<body>
+    
+<nav class="navbar">
+  <!-- LEFT SECTION -->
+  <div class="left-section">
+    <img src="assets/img/iamthecodelogo-removebg-preview.png" class="left-img" alt="Logo" />
+    <span class="left-text">Taal<br>High<br>School</span>
+  </div>
+
+  <!-- MOBILE TOGGLE -->
+  <input type="checkbox" id="menu-toggle" />
+  <label for="menu-toggle" class="hamburger"></label>
+
+  <!-- MIDDLE NAV LINKS -->
+  <ul class="nav-links">
+    <li><a href="#" class="active">Home</a></li>
+    <li><a href="page-about.html">About</a></li>
+    <li><a href="page-journey.html">Journey</a></li>
+    <li><a href="page-accomplishments.html">Accomplishments</a></li>
+    <li><a href="page-sdg.html">SDG</a></li>
+    <li><a href="page-faqs.html">FAQs</a></li>
+    <li><a href="page-acknowledgement.html">Acknowledgement</a></li>
+  </ul>
+
+  <!-- RIGHT SECTION -->
+  <div class="right-section">
+    <img src="assets/img/sign_in-removebg-preview.png" class="right-img" alt="Placeholder" />
+  </div>
+</nav>
+
+
+
+  
+ <div class="gao-content indent">
+      <div class="gao-heading">
+    <h1>About <b>iamtheCODE</b></h1>
+  </div>
+     <p>
+   iamtheCODE is the first African-led global movement to mobilize governments, the private sector, philanthropic foundations, investors and civil society to advance STEAMD (Science, Technology, Engineering, Arts, Mathematics and Design) education. Its goal is to mobilize these groups to invest in future technologies that can drive sustainable development for women and girls in marginalized communities.
+ </p>
+  </div>
+<h1 class="vid-heading"> It aims to enable 1 million young women and girls’ coders by 2030.
+</h1>
+<video controls>
+  <source src="assets\vid\iamthecode_vid_gao.mp4" type="video/mp4">
+</video>
+<div class="link-source">
+  <p> <a href="https://youtu.be/AlcMjnvttN8?si=MbdoO5kN8K-StQTy">Source: https://youtu.be/AlcMjnvttN8?si=MbdoO5kN8K-StQTy</a>
+  </p>
+  </div>
+    <div class="gao-content">
+    <div class="gao-heading">
+      <h1><b>iamtheCODE</b> PH Program Goals</h1>
+    </div>
+    <p>
+    • Worldwide, iamtheCODE aims to enable 1 million young women and girls coders by 2030.
+    <br><br>
+    • In the Philippines, the DepEd lamtheCODE Program hopes to advance digital education, empowering young students from marginalized communities to build better futures for themselves and their families.
+    <br><br>
+    • The iamtheCODE PH Program is supported by HER LEGACY PROJECT, led by its founder, Karen Davila.
+    </p>
+  </div>
+  
+    <div class="gao-content ">
+    <div class="gao-heading">
+      <h1><b>iamtheCODE</b> Project</h1>
+    </div>
+    
+   <p class="indent">
+      <ol>
+     <li><b>This 12-week program provides a comprehensive introduction to web development and programming.  You'll learn to</b></li>
+
+<ol>
+<li>Master the fundamentals of HTML for structuring web content.</li>
+
+<li>Dive into CSS and learn to style websites with colors, layouts, and responsive design.</li>
+
+<li>Explore JavaScript to add interactivity and dynamic elements to your web pages.</li>
+
+<li>Gain a solid foundation in Python programming, learning core concepts and building basic applications.</li>
+
+<li>This program goes beyond coding, offering valuable skills for personal and professional growth. </li> 
+</ol>
+<ol>
+  
+  <li><b>You will explore:</b></li>
+
+
+<ol>
+<li><b>The Wellbeing Code:</b> Empowering young girls with essential life skills.
+</li>
+
+
+
+
+<li><b>Sustainable Development Goals:</b> About global challenges and how to make a difference.</li>
+
+
+
+
+<li><b>Design Thinking:</b> Creating better products and services through customer-centric approaches.</li> 
+
+
+
+
+
+<li><b>Communication & Presentation Skills:</b> Mastering effective communication techniques for various settings.</li>
+
+
+
+
+<li><b>Project Management: </b> Planning and executing projects successfully.</li>
+
+
+</ol>
+</ol>
+</ol>
+</p>
+
+  </div>
+  
+  <div class="phase-container">
+    <div class="phase1-container">
+    <div class="phase-button">
+      <p>PHASE 1</p>
+     
+    </div>
+    <img src="assets\img\phase1-icon.png" alt="hard skills">
+    </div>
+    <div class="phase2-container">
+        <div class="phase-button">
+     <p>PHASE 2</p>
+    </div>
+    <img src="assets\img\phase2-icon.png" alt="soft skills">
+    </div>
+  </div>
+  <div class="popup-img-container1">
+    <div class="close-img1">X</div>
+    <img class="popup-img" src="assets\img\phase1.png" alt="phase 1">
+  </div>
+
+  <div class="popup-img-container2">
+    <div class="close-img2">X</div>
+    <img class="popup-img" src="assets\img\phase2.png" alt="phase 2">
+  </div>
+
+  
+
+</body>
+<script>
+   let phase1Box = document.querySelector(".phase1-container");
+  let phase2Box = document.querySelector(".phase2-container");
+  let popupContainer1 = document.querySelector(".popup-img-container1");
+  let popupContainer2 = document.querySelector(".popup-img-container2");
+    let close1_phase = document.querySelector(".close-img1");
+    let close2_phase = document.querySelector(".close-img2");
+  phase1Box.addEventListener("click", showPopup1);
+  
+  function showPopup1() {
+    popupContainer1.style.width = "99vw";
+
+  }
+  phase2Box.addEventListener("click", showPopup2);
+
+function showPopup2() {
+  popupContainer2.style.width = "99vw";
+
+}
+close1_phase.addEventListener("click", closeimg1);
+
+function closeimg1() {
+  popupContainer1.style.width = "0px";
+
+}
+
+close2_phase.addEventListener("click", closeimg2);
+
+function closeimg2() {
+  popupContainer2.style.width = "0px";
+
+}
+
+
+
+</script>
+</html>
