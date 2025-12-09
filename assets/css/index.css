@@ -578,26 +578,367 @@ body {
    
 }
 
+/* content-2 */
+
+.phd-2 h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 2rem;
+    
+}
+
+/* Container for left text + right video */
 .parent-container {
-   display:flex;
-   width: 100%;
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 0 40px;
+  
 }
 
+/* Left text side */
 .left-side {
-   width: 50%;
-   
-   padding: 10px;
+  flex: 1;
+  text-align: justify;
+  font-size: 1.1rem;
+  line-height: 1.7;
 }
 
+/* Right video side */
 .right-side {
-    width: 70%;
-   
-    padding: 35px;
+  flex: 1;
+  width: 100%;
 }
 
-.right-side video {
-    width: 450px;
-    margin-right: 350px;
-    
-    
+.welcome video {
+  width: 90%;
+  height: 50vh;     /* fullscreen height */
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 30px;
+}
+
+
+
+/* ---------------------- */
+/* RESPONSIVE MOBILE VIEW */
+/* ---------------------- */
+@media (max-width: 900px) {
+  .parent-container {
+    flex-direction: column;
+    padding: 0 20px;
+  }
+
+  .welcome video {
+    height: 30vh;
+  }
+}
+
+/* ---------------------- */
+/* EFFECTS (FADE + SLIDE) */
+/* ---------------------- */
+.fade-in {
+  opacity: 0;
+  animation: fadeIn 1.5s forwards;
+}
+
+.slide-left {
+  opacity: 0;
+  transform: translateX(-30px);
+  animation: slideLeft 1.2s forwards;
+}
+
+.slide-right {
+  opacity: 0;
+  transform: translateX(30px);
+  animation: slideRight 1.2s forwards;
+}
+
+@keyframes fadeIn {
+  to { opacity: 1; }
+}
+
+@keyframes slideLeft {
+  to { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes slideRight {
+  to { opacity: 1; transform: translateX(0); }
+}
+
+
+/* cards layout */
+
+/* SECTION SPACING */
+.cards-section {
+  width: 100%;
+  padding: 60px 0;
+  display: flex;
+  justify-content: center;
+}
+
+/* CONTAINER */
+.cards-container {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 0 20px;
+
+  /* Entrance animation */
+  opacity: 0;
+  animation: fadeUp 1s forwards;
+}
+
+/* CARD BOX DESIGN */
+.card-box {
+  width: 300px;
+  height: 330px;
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 25px;
+  text-align: center;
+  cursor: pointer;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.10);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+}
+
+/* CARD IMAGE */
+.card-box img {
+  width: 160px;
+  height: 150px;
+  object-fit: contain;
+  margin-bottom: 20px;
+  transition: transform 0.3s ease;
+}
+
+/* CARD TITLE */
+.card-box h3 {
+  font-size: 1.3rem;
+  margin-top: 10px;
+  transition: color 0.3s ease;
+}
+
+/* HOVER ANIMATION */
+.card-box:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 26px rgba(0, 0, 0, 0.18);
+  background: #f5faff;
+  transition: 0.5ms;
+}
+
+.card-box:hover img {
+  transform: scale(1.3);
+}
+
+.card-box:hover h3 {
+  color: #0066cc;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .cards-container {
+    gap: 20px;
+  }
+
+  .card-box {
+    width: 85%;
+    height: auto;
+    padding: 30px 20px;
+  }
+}
+
+/* ENTRANCE ANIMATION */
+@keyframes fadeUp {
+  from {
+    transform: translateY(30px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* NEWS LAYOUT!!! */
+
+.calendar-desktop {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.calendar-img {
+    width: 35%;
+    border-radius: 6px;
+}
+
+/* Hide mobile carousel on desktop */
+.carousel-container {
+    display: none;
+}
+
+/* ----- MOBILE VERSION (max-width: 480px) ----- */
+@media screen and (max-width: 480px) {
+
+    /* Hide desktop images */
+    .calendar-desktop {
+        display: none;
+    }
+
+    /* Show carousel only on mobile */
+    .carousel-container {
+        width: 90%;
+        max-width: 700px;
+        margin: 20px auto;
+        position: relative;
+        overflow: hidden;
+        display: block;
+    }
+
+    .carousel-wrapper {
+        display: flex;
+        transition: transform 0.4s ease;
+    }
+
+    .carousel-slide {
+        min-width: 100%;
+    }
+
+    .carousel-slide img {
+        width: 100%;
+        border-radius: 6px;
+    }
+
+    /* ARROWS */
+    .carousel-btn {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        background: rgba(0,0,0,0.5);
+        color: white;
+        border: none;
+        font-size: 22px;
+        padding: 6px 10px;
+        border-radius: 50%;
+        cursor: pointer;
+    }
+
+    .prev { left: 10px; }
+    .next { right: 10px; }
+
+    /* DOTS */
+    .carousel-dots {
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    .dot {
+        height: 10px;
+        width: 10px;
+        margin: 0 4px;
+        background: #bbb;
+        border-radius: 50%;
+        display: inline-block;
+    }
+
+    .dot.active {
+        background: #444;
+    }
+}
+
+
+/* FOOTER LAYOUT! */
+
+/* FOOTER STYLE */
+.ths-footer {
+    background: #7d1e16;
+    padding: 40px 20px;
+    color: white;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: center;
+    gap: 70px;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.footer-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-item img {
+    width: 60px;
+    height: auto;
+    transition: transform .3s ease;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+/* Hover zoom animation */
+.footer-item img:hover {
+    transform: scale(1.1);
+}
+
+.footer-label {
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+/* COPYRIGHT TEXT */
+.footer-copy {
+    font-size: 14px;
+    line-height: 1.5;
+    opacity: 0.9;
+    margin-top: 10px;
+}
+
+/* --------------------- */
+/* RESPONSIVE FOOTER     */
+/* --------------------- */
+@media (max-width: 768px) {
+    .footer-container {
+        gap: 40px;
+    }
+
+    .footer-item img {
+        width: 50px;
+    }
+
+    .footer-label {
+        font-size: 14px;
+    }
+
+    .footer-copy {
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 480px) {
+    .footer-item img {
+        width: 45px;
+    }
+
+    .footer-label {
+        font-size: 13px;
+    }
+
+    .footer-copy {
+        font-size: 12px;
+    }
 }
