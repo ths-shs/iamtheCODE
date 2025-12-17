@@ -204,6 +204,18 @@ html {
     margin-left: 7px;
 }
 
+@media (max-width: 950px) {
+    .nav-links .dropdown span {
+        display: none;
+    }
+}
+
+@media (max-width: 950px) {
+    .nav-links .dropdown span {
+        display: none;
+    }
+}
+
 .nav-links .dropdown-menu {
     list-style: none;
     position: absolute;
