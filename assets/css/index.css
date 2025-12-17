@@ -445,11 +445,13 @@ html {
 .landing {
     height: 100vh;
     width: 100%;
+
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
-    padding: 20px;
+
+    padding: 10%;
     position: relative;
 
     /* === GRADIENT + BACKGROUND IMAGE === */
@@ -471,10 +473,6 @@ html {
 }
 
 .landing-content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
     height: 100%;
     width: 100%;
     position: relative;
@@ -494,13 +492,12 @@ html {
 }
 
 .logo-strip {
+    width: 100%;
     display: flex;
     gap: 50px;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    position: absolute;
-    top: 25%;
 }
 
 .logo-strip img {
@@ -521,6 +518,14 @@ html {
 }
 
 @media (max-width: 768px) {
+
+    .landing-content {
+        height: 100%;
+        width: 100%;
+        position: relative;
+        top: 10%;
+    }
+
     .logo-strip {
         display: none;
     }
@@ -531,8 +536,6 @@ html {
         scroll-snap-type: x mandatory;
         -webkit-overflow-scrolling: touch;
         display: flex;
-        position: absolute;
-        top: 10%;
     }
 
     .carousel-track {
@@ -542,7 +545,7 @@ html {
 
     .carousel-track img {
         width: 100%;
-        height: 300px;
+        height: 280px;
         object-fit: contain;
         flex-shrink: 0;
         scroll-snap-align: center;
@@ -555,11 +558,15 @@ html {
 }
 
 .hero-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.landing-text-content {
     padding: 30px 40px;
     text-align: center;
     max-width: 700px;
-    position: absolute;
-    bottom: 15%;
     z-index: 2;
 }
 
