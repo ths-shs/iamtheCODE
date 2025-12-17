@@ -248,6 +248,7 @@ html {
     }
 
     #content-1 video {
+        height: auto;
         width: 100%;
         border-radius: 10px;
     }
@@ -532,6 +533,10 @@ html {
     #content-4 .card-title {
         font-size: 22px;
         bottom: 65px;
+    }
+
+    #content-4 .card-container {
+        gap: 30px;
     }
 
     #content-4 .card-container a {
