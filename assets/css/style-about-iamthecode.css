@@ -171,11 +171,22 @@ html {
 }
 
 #content-1 .iam-right img {
-    height: 380px;
+    height: 45vh;
 }
 
 #content-1 .iam-right .mobile-view {
     display: none;
+}
+
+@media (max-height: 768px) {
+    #content-1 {
+        padding-top: 10%;
+    }
+
+    #content-1 .iam-left h1 {
+        font-size: 2em;
+        width: 350px;
+    }
 }
 
 /* Mobile responsiveness */
