@@ -200,6 +200,11 @@ html {
     position: relative;
 }
 
+.nav-links .dropdown span {
+    font-size: 0.85em;
+    margin-left: 7px;
+}
+
 .nav-links .dropdown-menu {
     list-style: none;
     position: absolute;
