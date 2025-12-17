@@ -1,8 +1,16 @@
 @font-face {
     font-family: 'iam-font';
     src: url('../fonts/CreatoDisplay-Regular.otf');
-    font-weight: normal;
-    font-style: normal;
+}
+
+@font-face {
+    font-family: 'iam-font-bold';
+    src: url('../fonts/CreatoDisplay-Bold.otf');
+}
+
+@font-face {
+    font-family: 'iam-font-extra-bold';
+    src: url('../fonts/CreatoDisplay-ExtraBold.otf');
 }
 
 :root {
@@ -26,8 +34,8 @@
 
     /* ===== TEXT COLORS ===== */
     --text-main: #222222;
-    --text-light: #555555;
-    --text-lighter: #888888;
+    --text-light: #555;
+    --text-lighter: #979797;
     --text-invert: #ffffff;
 
     /* ===== NEUTRALS ===== */
@@ -57,6 +65,8 @@
     --font-primary: iam-font, sans-serif;
     --font-secondary: iam-font, sans-serif;
     --font-mono: iam-font, sans-serif;
+    --font-bold: iam-font-bold, sans-serif;
+    --font-extra-bold: iam-font-extra-bold, sans-serif;
 
     /* ===== FONT SIZES (scale) ===== */
     --fs-xs: 0.75rem;
@@ -106,18 +116,107 @@ html {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 120px 5% 5% 5%;
+    padding: 120px 15% 15% 15%;
 }
 
-#content-1 h2{
+#content-1 h2 {
     color: var(--color-secondary)
 }
 
-#content-1 h1{
-    text-align: center;
+#content-1 h1 {
+    font-size: 3rem;
+    font-style: var(--font-extra-bold);
+    margin: 0;
+    padding: 0;
+}
+
+#content-1 .category-date {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 20px;
+}
+
+#content-1 .category {
+    background-color: var(--danger);
+    padding: 5px;
+    font-size: 0.85rem;
+    border-radius: 5px;
+    color: var(--text-invert);
+}
+
+#content-1 .date {
+    position: relative;
+    padding-left: 14px;
+    font-size: 1rem;
+    color: var(--text-lighter);
+}
+
+#content-1 .date::before {
+    content: "";
+    width: 8px;
+    height: 8px;
+    background: red;
+    border-radius: 50%;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#content-1 .headline .sub-headline,
+#content-1 .news-content .content {
+    font-size: 1.25rem;
+    line-height: 1.5;
+    color: var(--text-light);
 }
 
 #content-1 img {
-    width: 80%;
-    padding: 0 0 4% 20%;
+    width: 100%;
+    padding: 20px 0;
+}
+
+.quote-block {
+    position: relative;
+    padding: 20px 20px 20px 36px;
+    border-left: 4px solid #e10600;
+    /* red line */
+    background: #fff;
+    margin: 20px 0;
+}
+
+.quote-block::before {
+    content: "“";
+    position: absolute;
+    top: -8px;
+    left: 10px;
+    font-size: 58px;
+    color: #f2b6b6;
+    font-family: serif;
+}
+
+.quote-main {
+    margin: 0;
+    font-style: italic;
+    font-size: 1.25rem;
+    line-height: 1.6;
+    color: var(--text-light);
+}
+
+.quote-sub {
+    margin-top: 40px;
+    padding: 40px;
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: var(--text-invert);
+    background-color: var(--bg-dark);
+
+}
+
+.gradient-divider {
+    height: 5px;
+    width: 170px;
+    margin-top: 8px;
+    border-radius: 3px;
+    background: linear-gradient(90deg, var(--color-primary), var(--color-accent));
 }
