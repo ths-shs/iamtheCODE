@@ -517,6 +517,17 @@ html {
     display: none;
 }
 
+@media (max-height: 768px) {
+    .landing {
+        height: auto;
+        top: 10%;
+    }
+
+    .carousel-track img {
+        height: 180px;
+    }
+}
+
 @media (max-width: 768px) {
 
     .landing-content {
@@ -560,6 +571,7 @@ html {
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
 }
 
 .landing-text-content {
