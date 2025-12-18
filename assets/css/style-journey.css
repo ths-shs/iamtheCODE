@@ -1,13 +1,3 @@
-@font-face {
-    font-family: 'iam-font';
-    src: url('../fonts/CreatoDisplay-Regular.otf');
-}
-
-@font-face {
-    font-family: 'iam-font-bold';
-    src: url('../fonts/CreatoDisplay-Bold.otf');
-}
-
 :root {
     /* ===== BRAND COLORS ===== */
     --color-primary: #e53935;
@@ -22,15 +12,15 @@
     --color-accent: #ffc371;
 
     /* ===== BACKGROUND COLORS ===== */
-    --bg-main: #ffffff;
+    --bg-main: #fcfcfc;
     --bg-light: #eeeeee;
     --bg-dark: #1c2126;
     --bg-darker: #141414;
 
     /* ===== TEXT COLORS ===== */
     --text-main: #222222;
-    --text-light: #555555;
-    --text-lighter: #888888;
+    --text-light: #555;
+    --text-lighter: #979797;
     --text-invert: #ffffff;
 
     /* ===== NEUTRALS ===== */
@@ -60,6 +50,8 @@
     --font-primary: iam-font, sans-serif;
     --font-secondary: iam-font, sans-serif;
     --font-mono: iam-font, sans-serif;
+    --font-bold: iam-font-bold, sans-serif;
+    --font-extra-bold: iam-font-extra-bold, sans-serif;
 
     /* ===== FONT SIZES (scale) ===== */
     --fs-xs: 0.75rem;

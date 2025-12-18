@@ -1,10 +1,3 @@
-@font-face {
-    font-family: 'iam-font';
-    src: url('../fonts/CreatoDisplay-Regular.otf');
-    font-weight: normal;
-    font-style: normal;
-}
-
 :root {
     /* ===== BRAND COLORS ===== */
     --color-primary: #e53935;
@@ -26,8 +19,8 @@
 
     /* ===== TEXT COLORS ===== */
     --text-main: #222222;
-    --text-light: #555555;
-    --text-lighter: #888888;
+    --text-light: #555;
+    --text-lighter: #979797;
     --text-invert: #ffffff;
 
     /* ===== NEUTRALS ===== */
@@ -57,6 +50,8 @@
     --font-primary: iam-font, sans-serif;
     --font-secondary: iam-font, sans-serif;
     --font-mono: iam-font, sans-serif;
+    --font-bold: iam-font-bold, sans-serif;
+    --font-extra-bold: iam-font-extra-bold, sans-serif;
 
     /* ===== FONT SIZES (scale) ===== */
     --fs-xs: 0.75rem;
@@ -102,19 +97,25 @@ html {
 }
 
 #content-1 {
-    padding: 120px 15% 5% 15%;
+    padding: 130px 15% 0 15%;
 }
 
-#content-1 .gradient-divider {
-    height: 10px;
-    width: 12%;
-    margin-top: 8px;
-    border-radius: 3px;
-    background: linear-gradient(90deg, var(--color-primary), var(--color-accent));
+#content-1 .title {
+    text-align: left;
+    padding: 20px 0;
 }
 
-#content-1 .page-heading {
-    text-align: center;
+#content-1 .title h3 {
+    color: var(--color-primary);
+    margin: 0;
+    padding: 0;
+}
+
+#content-1 .title h1 {
+    color: var(--text-main);
+    font-size: 3em;
+    margin: 0;
+    padding: 5px 0;
 }
 
 #content-1 .image-container {
@@ -139,16 +140,11 @@ html {
 
 #content-2 {
     height: fit-content;
-    padding: 10px 5% 5% 5%;
+    padding: 10px 15% 5% 15%;
 }
 
 #content-2 .aral-content h3 {
     color: var(--text-light)
-}
-
-#content-2 .text-content {
-    padding: 0px 100px 20px;
-    text-align: justify;
 }
 
 @media (max-width: 768px) {
