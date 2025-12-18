@@ -1,4 +1,18 @@
-/* Replace MyCustomFont with the actual font name */
+@font-face {
+    font-family: 'iam-font';
+    src: url('../fonts/CreatoDisplay-Regular.otf');
+}
+
+@font-face {
+    font-family: 'iam-font-bold';
+    src: url('../fonts/CreatoDisplay-Bold.otf');
+}
+
+@font-face {
+    font-family: 'iam-font-extra-bold';
+    src: url('../fonts/CreatoDisplay-ExtraBold.otf');
+}
+
 :root {
     /* ===== BRAND COLORS ===== */
     --color-primary: #e53935;

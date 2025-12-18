@@ -1,3 +1,18 @@
+@font-face {
+    font-family: 'iam-font';
+    src: url('../fonts/CreatoDisplay-Regular.otf');
+}
+
+@font-face {
+    font-family: 'iam-font-bold';
+    src: url('../fonts/CreatoDisplay-Bold.otf');
+}
+
+@font-face {
+    font-family: 'iam-font-extra-bold';
+    src: url('../fonts/CreatoDisplay-ExtraBold.otf');
+}
+
 :root {
     /* ===== BRAND COLORS ===== */
     --color-primary: #e53935;
@@ -1155,14 +1170,6 @@ html {
     font-weight: bold;
     text-align: center;
 }
-
-#content-5 .iam-activity-details {}
-
-#content-5 .iam-activity-details h3 {}
-
-#content-5 .iam-activity-details ul {}
-
-#content-5 .iam-activity-details ul li {}
 
 @media (max-width: 768px) {
     #content-5 {

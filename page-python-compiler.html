@@ -9,6 +9,21 @@
 </head>
 
 <style>
+    @font-face {
+        font-family: 'iam-font';
+        src: url('../fonts/CreatoDisplay-Regular.otf');
+    }
+
+    @font-face {
+        font-family: 'iam-font-bold';
+        src: url('../fonts/CreatoDisplay-Bold.otf');
+    }
+
+    @font-face {
+        font-family: 'iam-font-extra-bold';
+        src: url('../fonts/CreatoDisplay-ExtraBold.otf');
+    }
+
     * {
         box-sizing: border-box;
         font-family: iam-font, sans-serif;
@@ -18,7 +33,7 @@
         margin: 0;
         overflow-x: hidden;
     }
-    
+
     #code-section {
         padding: 5%;
     }
@@ -43,11 +58,22 @@
         border-color: var(--color-accent);
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
     }
+
+    .go-back {
+        display: inline-block;
+        padding: 8px 0;
+        color: #e53935;
+        text-decoration: none;
+        border-radius: 5px;
+        transition: background-color 0.3s;
+        font-family: iam-font, sans-serif;
+    }
 </style>
 
 <body>
 
     <section id="code-section">
+        <a href="javascript:history.back()" class="go-back">← Go Back</a>
         <textarea id="code" placeholder="Type your JavaScript here..."></textarea>
     </section>
 
