@@ -97,7 +97,7 @@ html {
 }
 
 #journey-cover {
-    height: auto;
+    height: 100vh;
     padding: 120px 5% 5% 5%;
 
     position: relative;
@@ -182,6 +182,12 @@ html {
     margin-top: 8px;
     border-radius: 3px;
     background: var(--bg-dark);
+}
+
+@media (max-height: 768px) {
+    #journey-cover {
+        height: auto;
+    }
 }
 
 @media (max-width: 768px) {
@@ -984,6 +990,13 @@ html {
 }
 
 /* Left */
+#content-6 .partner-left {
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 #content-6 .partner-left h1 {
     margin-bottom: 15px;
     font-weight: 700;
@@ -998,11 +1011,18 @@ html {
 }
 
 /* Right */
+#content-6 .partner-right {
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 #content-6 .partner-right p {
     line-height: 1.7;
     margin-bottom: 30px;
     text-align: justify;
-    color: var(--text-main);
+    color: var(--text-light);
 }
 
 /* Responsive */
