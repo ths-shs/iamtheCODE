@@ -530,6 +530,8 @@
     </div>
   </section>
 
+  <a href="#" class="top">Back to Top</a>
+
   <footer id="footer-top" class="site-footer">
 
     <div class="footer-bg-overlay"></div>
@@ -579,7 +581,8 @@
           <a href="#" class="icon-circle">
             <img src="assets/img/imgs-footer/footer-fb.png" alt="Facebook">
           </a>
-          <a class="icon-circle" href="https://mail.google.com/mail/?view=cm&fs=1&to=taalhighschool7@gmail.com" target="_blank">
+          <a class="icon-circle" href="https://mail.google.com/mail/?view=cm&fs=1&to=taalhighschool7@gmail.com"
+            target="_blank">
             <img src="assets/img/imgs-footer/footer-email.png" alt="Email">
           </a>
 
@@ -614,6 +617,26 @@
         behavior: "smooth"
       });
     });
+
+    // Logo Carousel
+    const carousel = document.querySelector('.logo-carousel');
+    let index = 0;
+
+    function autoScroll() {
+      const width = carousel.clientWidth;
+      index++;
+
+      carousel.scrollTo({
+        left: width * index,
+        behavior: "smooth"
+      });
+
+      if (index >= carousel.children[0].children.length) {
+        index = 0;
+      }
+    }
+
+    setInterval(autoScroll, 5000);
   </script>
 </body>
 

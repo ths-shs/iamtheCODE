@@ -774,9 +774,10 @@
                     <a href="#" class="icon-circle">
                         <img src="assets/img/imgs-footer/footer-fb.png" alt="Facebook">
                     </a>
-                    <a class="icon-circle" href="https://mail.google.com/mail/?view=cm&fs=1&to=taalhighschool7@gmail.com" target="_blank">
-            <img src="assets/img/imgs-footer/footer-email.png" alt="Email">
-          </a>
+                    <a class="icon-circle"
+                        href="https://mail.google.com/mail/?view=cm&fs=1&to=taalhighschool7@gmail.com" target="_blank">
+                        <img src="assets/img/imgs-footer/footer-email.png" alt="Email">
+                    </a>
                 </div>
 
                 <div class="line"></div>
@@ -799,6 +800,16 @@
     </section>
 
     <script src="javascript/script.js"></script>
+
+    <script>
+        document.getElementById('scroll-btn').addEventListener('click', function (e) {
+            e.preventDefault();
+            window.scrollBy({
+                top: window.innerHeight,
+                behavior: 'smooth'
+            });
+        });
+    </script>
 </body>
 
 </html>

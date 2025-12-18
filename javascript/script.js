@@ -18,28 +18,6 @@ window.addEventListener('scroll', handleScroll);
 // Initialize with default class
 navbar.classList.add('default');
 
-// Logo Carousel
-const carousel = document.querySelector('.logo-carousel');
-let index = 0;
-
-function autoScroll() {
-    const width = carousel.clientWidth;
-    index++;
-
-    carousel.scrollTo({
-        left: width * index,
-        behavior: "smooth"
-    });
-
-    if (index >= carousel.children[0].children.length) {
-        index = 0;
-    }
-}
-
-setInterval(autoScroll, 5000);
-
-// Mobile Nav Bar
-
 // Cards
 document.querySelectorAll('#iam-cards .flip-card').forEach(card => {
     card.addEventListener('click', () => {
@@ -62,13 +40,5 @@ faqs.forEach((faq) => {
             if (item !== faq) item.classList.remove("active");
         });
         faq.classList.toggle("active");
-    });
-});
-
-document.getElementById('scroll-btn').addEventListener('click', function (e) {
-    e.preventDefault();
-    window.scrollBy({
-        top: window.innerHeight,
-        behavior: 'smooth'
     });
 });

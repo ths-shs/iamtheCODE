@@ -133,6 +133,11 @@ html {
     margin: 0;
 }
 
+#content-1 .iam-left p {
+    color: var(--text-light);
+    line-height: 2;
+}
+
 #content-1 .iam-right {
     width: 60%;
 }
