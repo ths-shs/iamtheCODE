@@ -98,7 +98,7 @@ html {
 
 #content-1 {
     height: 100vh;
-    padding: 5%;
+    padding: 10%;
 }
 
 #content-1 .container {
@@ -120,8 +120,17 @@ html {
     width: 50%;
 }
 
-#content-1 .iam-left h1 {
+#content-1 .iam-left h2 {
     color: var(--color-primary);
+    padding: 0;
+    margin: 0;
+}
+
+
+#content-1 .iam-left h1 {
+    color: var(--text-main);
+    padding: 0;
+    margin: 0;
 }
 
 #content-1 .iam-right {
