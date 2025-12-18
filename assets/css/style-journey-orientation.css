@@ -135,7 +135,7 @@ html {
 
 #content-1 .iam-left p {
     color: var(--text-light);
-    line-height: 2;
+    line-height: 1.6;
 }
 
 #content-1 .iam-right {

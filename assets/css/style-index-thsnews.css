@@ -179,7 +179,7 @@ html {
 #content-1 .headline .sub-headline,
 #content-1 .news-content .content {
     font-size: 1.25rem;
-    line-height: 2;
+    line-height: 1.6;
     color: var(--text-light);
 }
 
