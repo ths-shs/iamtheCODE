@@ -851,6 +851,12 @@ html {
 }
 
 #content-5 .modal-right {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+#content-5 .modal-wrapper {
     width: 60%;
     padding: 30px;
     position: relative;
@@ -864,7 +870,6 @@ html {
 }
 
 #content-5 .modal-right h3 {
-    margin-top: 0;
     color: var(--text-main);
 }
 
@@ -899,7 +904,7 @@ html {
     }
 
     #content-5 .modal-right strong {
-        padding: 25px 0;
+        padding: 25px 0 5px 0;
     }
 
     #content-5 .close-btn {
@@ -912,7 +917,15 @@ html {
     }
 
     #content-5 .modal-right {
+        justify-content: center;
+    }
+
+    #content-5 .modal-wrapper {
         width: 100%;
+    }
+
+    #content-5 .modal-right h3 {
+        padding: 25px 0 10px 0;
     }
 
 }
