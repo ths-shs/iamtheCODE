@@ -5,6 +5,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" href="assets/img/imgs-all/sdg-wheel.png" type="image/png">
+    <link rel="stylesheet" href="assets/css/iam-animation.css" />
     <title>iamtheCODE</title>
 </head>
 
@@ -73,9 +74,15 @@
 <body>
 
     <section id="code-section">
-        <a href="javascript:history.back()" class="go-back">← Go Back</a>
-        <textarea id="code" placeholder="Type your JavaScript here..."></textarea>
+        <div class="animate slide-right delay-300">
+            <a href="javascript:history.back()" class="go-back">← Go Back</a>
+        </div>
+        <div class="animate slide-up delay-300">
+            <textarea id="code" placeholder="Type your Python here..."></textarea>
+        </div>
     </section>
+
+    <script src="javascript/script-animation.js"></script>
 
     <script>
         document.addEventListener("DOMContentLoaded", () => {
