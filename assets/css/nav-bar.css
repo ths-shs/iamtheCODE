@@ -350,9 +350,8 @@ html {
 
     .nav-links .sign-in {
         display: block;
-        width: 140px;
-        margin: 120px auto 0 auto;
-        padding: 10px 20px;
+        margin: auto;
+        padding: 10px 40px;
         text-align: center;
         font-size: 1rem;
         font-weight: 600;

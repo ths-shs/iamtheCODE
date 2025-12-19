@@ -355,9 +355,8 @@ html {
 
     .nav-links .sign-in {
         display: block;
-        width: 140px;
-        margin: 120px auto 0 auto;
-        padding: 10px 20px;
+        margin: auto;
+        padding: 10px 40px;
         text-align: center;
         font-size: 1rem;
         font-weight: 600;
@@ -541,7 +540,7 @@ html {
 @media (max-height: 768px) {
     .landing {
         height: auto;
-        top: 10%;
+        padding: 25% 0;
     }
 
     .carousel-track img {
@@ -550,11 +549,14 @@ html {
 }
 
 @media (max-width: 768px) {
+    .landing {
+        height: auto;
+    }
 
     .landing-content {
-        height: 100%;
+        height: 100vh;
         width: 100%;
-        top: 10%;
+        padding: 120px 5% 10% 5%;
     }
 
     .logo-strip {
@@ -576,7 +578,7 @@ html {
 
     .carousel-track img {
         width: 100%;
-        height: 280px;
+        height: 230px;
         object-fit: contain;
         flex-shrink: 0;
         scroll-snap-align: center;
@@ -585,6 +587,18 @@ html {
 
     .logo-carousel::-webkit-scrollbar {
         display: none;
+    }
+}
+
+@media (max-height: 768px) and (max-width: 768px) {
+    .landing-content {
+        height: fit-content;
+        width: 100%;
+        padding: 20px 5% 10% 5%;
+    }
+
+    .carousel-track img {
+        height: 200px;
     }
 }
 
