@@ -161,6 +161,12 @@ html {
     cursor: pointer;
 }
 
+@media (max-width: 768px) {
+    .left-text {
+        display: none;
+    }
+}
+
 /* Animate logo when nav opens */
 #menu-toggle:checked~.left-section .left-img {
     transform: scale(0.85) rotate(-5deg);
