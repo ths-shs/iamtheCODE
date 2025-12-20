@@ -618,6 +618,12 @@ html {
     }
 }
 
+@media (max-width: 768px) {
+    .hero-box {
+        position: absolute;
+    }
+}
+
 .landing-text-content {
     padding: 30px 40px;
     text-align: center;
