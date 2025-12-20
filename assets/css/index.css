@@ -540,7 +540,7 @@ html {
 @media (max-height: 768px) {
     .landing {
         height: auto;
-        padding: 25% 0;
+        padding: 10% 0;
     }
 
     .carousel-track img {
