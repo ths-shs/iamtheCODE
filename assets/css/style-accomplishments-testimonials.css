@@ -492,23 +492,53 @@ html {
 }
 
 .close-button {
+    font-size: 50px;
+    text-decoration: none;
     cursor: pointer;
-    padding: 10px;
+    width: 100%;
+
     display: flex;
-    justify-content: flex-end;
     align-items: center;
+    justify-content: center;
+}
+
+.close-button .left-side {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.close-button .right-side {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.close-button h2 {
+    padding-left: 10px;
+    font-size: 1.25rem;
+}
+
+.close-button img {
+    height: 50px;
 }
 
 .modal-content {
     background: #fff;
     width: 100%;
-    max-width: 600px;
+    max-width: 60%;
     border-radius: 10px;
     padding: 20px;
     position: relative;
-    margin: auto;
 }
 
+@media (max-width: 768px) {
+    .modal-content {
+        max-width: 100%;
+    }
+}
 
 /* Responsive Video Wrapper */
 .video-wrapper {
