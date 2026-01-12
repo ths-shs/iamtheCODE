@@ -180,6 +180,61 @@
         </div>
     </section>
 
+    <section id="content-3">
+        <div class="container">
+
+            <div class="team-header">
+                <div>
+                    <img src="assets/img/imgs-index/logos/logo-ths.png" alt="">
+                    <h1>The Minds Behind the Build</h1>
+                </div>
+            </div>
+
+            <section class="team">
+                <div class="team-card"
+                    style="background-image:url('assets/img/imgs-team/pic-rep-adviser.png'); background-color: #6f65ee;">
+                    <div class="content">
+                        <h2>Rosemarie Mendoza</h2>
+                        <p>Team Adviser</p>
+                    </div>
+                </div>
+
+                <div class="team-card"
+                    style="background-image:url('assets/img/imgs-team/pic-rep-justine.png'); background-color: #bb3131;">
+                    <div class="content">
+                        <h2>Justine Raven L. Deluso</h2>
+                        <p>Programmer</p>
+                    </div>
+                </div>
+
+                <div class="team-card"
+                    style="background-image:url('assets/img/imgs-team/pic-rep-faye.png'); background-color: #eee065;">
+                    <div class="content">
+                        <h2>Angela Faye C. Medina</h2>
+                        <p>Programmer</p>
+                    </div>
+                </div>
+
+                <div class="team-card"
+                    style="background-image:url('assets/img/imgs-team/pic-rep-rafael.png'); background-color: #81b9df;">
+                    <div class="content">
+                        <h2>Rafael F. Lazarte</h2>
+                        <p>Programmer</p>
+                    </div>
+                </div>
+
+                <div class="team-card"
+                    style="background-image:url('assets/img/imgs-team/pic-rep-eunice.png'); background-color: #ee7140;">
+                    <div class="content">
+                        <h2>Eunice Althea C. Estrella</h2>
+                        <p>Programmer</p>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+    </section>
+
     <footer id="footer-top" class="site-footer">
 
         <div class="footer-bg-overlay"></div>
@@ -257,6 +312,18 @@
 
     <script src="javascript/script.js"></script>
     <script src="javascript/script-animation.js"></script>
+
+    <script>
+        const cards = document.querySelectorAll(".team-card");
+
+        cards.forEach(card => {
+            card.addEventListener("click", () => {
+                cards.forEach(c => c.classList.remove("active"));
+                card.classList.add("active");
+            });
+        });
+
+    </script>
 </body>
 
 </html>
