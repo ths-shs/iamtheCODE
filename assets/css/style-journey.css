@@ -846,7 +846,7 @@ html {
     width: auto;
     height: 100%;
     position: absolute;
-    left: -30px;
+    left: 30px;
     bottom: 0;
 }
 
