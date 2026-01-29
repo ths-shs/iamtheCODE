@@ -462,3 +462,36 @@ html {
 #menu-toggle:checked~.nav-links li:nth-child(7) a {
     animation-delay: 0.40s;
 }
+
+/* --- Scroll to Top Button --- */
+#scrollTopBtn {
+    position: fixed;
+    bottom: 60px;
+    right: 60px;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background: var(--color-primary);
+    color: var(--text-invert);
+    border: none;
+    font-size: 22px;
+    cursor: pointer;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.25);
+    z-index: 1000;
+
+    /* animation setup */
+    opacity: 0;
+    transform: translateY(20px);
+    pointer-events: none;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+#scrollTopBtn.show {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+}
+
+#scrollTopBtn:hover {
+    transform: translateY(-4px);
+}
