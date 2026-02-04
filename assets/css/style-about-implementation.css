@@ -253,14 +253,9 @@ html {
     padding: 20px 0 0 0;
 }
 
-.principal {
-   position: relative;
-   left: 104%;
-  
-    
-}
 
-/* Mobile responsiveess */
+
+/* Mobile responsiveness */
 @media (max-width: 768px) {
     #content-1 .gradient-divider {
         height: 10px;
@@ -269,6 +264,14 @@ html {
         border-radius: 3px;
         background: linear-gradient(90deg, var(--color-primary), var(--color-accent));
     }
+
+.fillerCard {
+display: none;
+ 
+ 
+}
+
+
 
     .iam-parent {
         display: grid;
@@ -413,11 +416,6 @@ html {
         height: auto;
         padding: 10%;
     }
-
-      .principal{
-        position: relative;
-   left: 50%;
-      }
 
     .team {
         flex-direction: column;
