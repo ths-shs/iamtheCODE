@@ -253,7 +253,14 @@ html {
     padding: 20px 0 0 0;
 }
 
-/* Mobile responsiveness */
+.principal {
+   position: relative;
+   left: 104%;
+  
+    
+}
+
+/* Mobile responsiveess */
 @media (max-width: 768px) {
     #content-1 .gradient-divider {
         height: 10px;
@@ -406,6 +413,11 @@ html {
         height: auto;
         padding: 10%;
     }
+
+      .principal{
+        position: relative;
+   left: 50%;
+      }
 
     .team {
         flex-direction: column;
